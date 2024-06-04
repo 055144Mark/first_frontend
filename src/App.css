@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: rgb(47, 47, 47);
+  border-radius: 14px;
 }
 
 .logo {
@@ -38,5 +40,6 @@
 }
 
 .read-the-docs {
-  color: #888;
+
+  color: red;
 }

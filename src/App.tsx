@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <div>
+      <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
         <TonConnectButton />
       </div>
       <div>
@@ -35,9 +35,7 @@ function App() {
 
         {connected && (
           <a 
-            onClick={() => {
-              sendIncrement()
-            }}
+            onClick={sendIncrement}
           >
             Increment by 5
           </a>
@@ -47,9 +45,7 @@ function App() {
 
         {connected && (
           <a 
-            onClick={() => {
-              sendDeposit()
-            }}
+            onClick={sendDeposit}
           >
             Deposit 1 TON
           </a>
@@ -59,9 +55,7 @@ function App() {
 
         {connected && (
           <a 
-            onClick={() => {
-              sendWithdrawalRequest()
-            }}
+            onClick={sendWithdrawalRequest}
           >
             Withdraw 0.9 TON
           </a>
